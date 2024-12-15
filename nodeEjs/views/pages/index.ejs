@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('../partials/head'); %>
+  <body class="container">
+    <%- include('../partials/header'); %>
+    <main>
+      <div class="container">
+        <h1>Node com EJS</h1>
+        <p>Aprendendo a trabalhar com arquivos EJS</p>
+      </div>
+      <ul>
+        <% senhor.forEach((s) => { %>
+        <li><strong><%= s.titulo %></strong><%= s.mensagem %></li>
+        <% }) %>
+      </ul>
+    </main>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
